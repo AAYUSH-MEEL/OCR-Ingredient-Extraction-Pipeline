@@ -187,6 +187,7 @@ If it ran on the raw noisy image it would upscale the noise as well.
 ---
 
 ## 7. Stage 4 - PaddleOCR Text Detection and Recognition
+
 <p align="center">
   <img src="assets/2.png" width="100%">
 </p>
@@ -282,8 +283,6 @@ The textual input consists of:
 
 The tokenizer converts this information into a sequence of text tokens represented in the same 4096-dimensional embedding space used by the language model.
 
-
-### Fusion
 
 ### Fusion
 
