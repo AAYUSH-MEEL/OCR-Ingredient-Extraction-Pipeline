@@ -509,19 +509,20 @@ Structured reports are displayed in the notebook output cells.
 ---
 
 ## 14. Project Structure
+
+```text
 OCR-Ingredient-Extraction-Pipeline/
+│
+├── README.md
+├── paddle_pipeline.ipynb
+├── assets/
+│   ├── 1.png
+│   ├── 2.png
+│   └── 3.png
+└── outputs/
+    └── ingredients_output.csv
+```
 
-|
-
-|-- README.md                         this file
-
-|-- paddle_pipeline.ipynb             main Colab notebook
-
-|
-
-+-- outputs/
-
-+-- ingredients_output.csv        extracted ingredients per image
 
 Files excluded by .gitignore (generated at runtime, too large for GitHub):
 data/                                 image data (session-specific)
