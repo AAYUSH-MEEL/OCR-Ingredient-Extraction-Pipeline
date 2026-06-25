@@ -523,16 +523,13 @@ OCR-Ingredient-Extraction-Pipeline/
 ```
 
 
-Files excluded by .gitignore (generated at runtime, too large for GitHub):
-data/                                 image data (session-specific)
+### Files Excluded by `.gitignore`
 
-RealESRGAN_x4plus.pth                 model weights (67MB, downloaded at runtime)
-
-outputs/visualizations/               plot images
-
-pycache/                          Python cache
-
-.ipynb_checkpoints/                   Colab auto-saves
+- `data/` — Session-specific image data generated during runtime.
+- `RealESRGAN_x4plus.pth` — Model weights downloaded automatically at runtime.
+- `outputs/visualizations/` — Generated visualization images.
+- `__pycache__/` — Python cache files.
+- `.ipynb_checkpoints/` — Google Colab notebook checkpoints.
 
 ---
 
