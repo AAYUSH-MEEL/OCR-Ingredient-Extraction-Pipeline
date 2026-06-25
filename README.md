@@ -285,8 +285,13 @@ The tokenizer converts this information into a sequence of text tokens represent
 
 ### Fusion
 
-Both branches produce 4096-dim vectors, concatenated into one sequence:
-[IMG_START][v1...v256][IMG_END][prompt tokens][OCR text tokens][GENERATE]
+### Fusion
+
+Both branches produce 4096-dimensional embeddings that are merged into a single sequence before being processed by the language model.
+
+```text
+[IMG_START][v1...v256][IMG_END][Prompt Tokens][OCR Tokens][GENERATE]
+```
 
 ### MLP Projector - The Bridge
 
