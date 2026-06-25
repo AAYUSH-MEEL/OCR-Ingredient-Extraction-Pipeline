@@ -236,9 +236,10 @@ If it ran on the raw noisy image it would upscale the noise as well.
 ---
 
 ## 7. Stage 4 - PaddleOCR Text Detection and Recognition
-
-PaddleOCR is called with `ocr.ocr(image_path, cls=True)` and runs three
-internal stages automatically.
+<p align="center">
+  <img src="assets/2.png" width="100%">
+</p>
+PaddleOCR is called with `ocr.ocr(image_path, cls=True)` and runs three internal stages automatically.
 
 ### Sub-stage A - DBNet Text Detection
 
