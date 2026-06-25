@@ -511,6 +511,58 @@ Structured reports are displayed in the notebook output cells.
 
 ---
 
+## Dataset
+
+### Dataset Availability
+
+The dataset used in this project is private and is not publicly released.
+
+If you require additional information regarding the dataset, annotation format, or potential research collaboration, please contact the repository maintainer.
+
+### Dataset Characteristics
+
+The dataset consists of real-world product label images containing:
+
+* Ingredient information
+* Product descriptions
+* Directions and usage instructions
+* Manufacturer information
+* Allergy and caution statements
+* Multi-line OCR regions
+* Complex packaging layouts
+
+### Example Dataset Sample
+
+#### Input Image
+
+<p align="center">
+  <img src="assets/dataset_image_example.jpg" width="35%">
+</p>
+
+#### Annotation Example
+
+<p align="center">
+  <img src="assets/dataset_annotation_example.jpg" width="80%">
+</p>
+
+### Annotation Format
+
+Each image is accompanied by a JSON annotation file containing:
+
+* Language region bounding boxes
+* OCR text region bounding boxes
+* Ground-truth transcription text
+* Cell-level OCR annotations
+
+```json
+{
+  "language_bbox": [...],
+  "cells_bbox": [...],
+  "err_cells_bbox": [...]
+}
+```
+
+
 ## 14. Project Structure
 
 ```text
