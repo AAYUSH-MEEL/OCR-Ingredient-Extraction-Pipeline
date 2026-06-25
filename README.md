@@ -351,11 +351,10 @@ Company name, address, batch number, expiry date
 
 ### Cell B - Ingredients Only per Image
 
-Ingredient 1
-Ingredient 2
-Ingredient 3
-
-...
+- Ingredient 1
+- Ingredient 2
+- Ingredient 3
+- ...
 
 
 ### CSV Export
