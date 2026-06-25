@@ -32,40 +32,15 @@ When you photograph a product label, the ingredient text printed on it is not
 machine-readable. It is just pixels in an image. This pipeline takes that photograph
 and produces a clean, structured, error-corrected text output containing the full
 ingredient list.
-Raw photograph of a product label
+**Pipeline Overview**
 
-|
-
-v
-
-Classical computer vision  ->  removes noise, fixes lighting, sharpens edges
-
-|
-
-v
-
-Deep learning upscaling    ->  enhances fine text detail that camera missed
-
-|
-
-v
-
-PaddleOCR                  ->  finds and reads all text in the image
-
-|
-
-v
-
-InternVL3.5-1B             ->  corrects OCR errors using image + text together
-
-|
-
-v
-
-Structured ingredient list  ->  saved as Markdown report and CSV file
-
+1. Raw product label photograph
+2. Classical preprocessing (NLM Denoising, CLAHE, and Unsharp Masking)
+3. Deep learning enhancement using Real-ESRGAN
+4. Text detection and recognition using PaddleOCR
+5. OCR correction and structured extraction using InternVL3.5-1B
+6. Export of extracted ingredients to Markdown reports and CSV files
 ---
-
 ## 2. Why This Problem is Hard
 
 Reading text from a product label photograph is significantly harder than reading
