@@ -162,39 +162,15 @@ text is 8-12 pixels tall, there are too few pixels to represent fine character
 detail. Real-ESRGAN reconstructs plausible detail that the camera never captured.
 
 ### Architecture - RRDBNet
-Input low-resolution image
 
-|
+The RRDBNet architecture used by Real-ESRGAN consists of:
 
-v
+1. **Input Convolution Layer** – Extracts low-level image features from the input image.
+2. **23 Residual-in-Residual Dense Blocks (RRDBs)** – Performs deep feature extraction using dense connections and residual learning.
+3. **Pixel Shuffle Upsampling (×4)** – Increases image resolution by a factor of four while preserving learned features.
+4. **Final Convolution Layers** – Reconstructs the enhanced high-quality image from the extracted features.
 
-Initial convolution layer
-
-|
-
-v
-
-23 x RRDB blocks (Residual in Residual Dense Block Network)
-
-Each block: 3 dense blocks with 5 convolutions, residual connections
-
-Deep residual structure allows gradient flow through hundreds of layers
-
-|
-
-v
-
-Pixel shuffle upsampling x4
-
-Increases image dimensions from WxH to 4W x 4H
-
-|
-
-v
-
-Final convolution layers
-
-Output: clean enhanced image
+This architecture enables Real-ESRGAN to recover fine character details and improve OCR readability on low-resolution ingredient labels.
 
 ### The Resize-Back Step
 
