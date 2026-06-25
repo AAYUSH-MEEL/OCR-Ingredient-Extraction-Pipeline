@@ -264,7 +264,6 @@ InternVL fixes these by cross-referencing the image against the OCR text.
 - **HF native:** Uses standard transformers without custom code
 
 ### Vision Branch
-### Vision Branch
 
 The vision encoder processes the preprocessed image through the following stages:
 
