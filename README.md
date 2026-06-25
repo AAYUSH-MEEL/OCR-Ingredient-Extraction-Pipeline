@@ -294,6 +294,10 @@ annotations are needed, making dataset creation much cheaper.
 
 ## 8. Stage 5 - InternVL3.5-1B Post-Processing
 
+<p align="center">
+  <img src="assets/3.png" width="100%">
+</p>
+
 ### Why a Language Model is Needed After OCR
 
 PaddleOCR produces imperfect output: merged words, character substitutions,
