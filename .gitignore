@@ -1,0 +1,17 @@
+# Data folders (session-specific, too large for GitHub)
+data/
+outputs/visualizations/
+
+# Model weights (downloaded at runtime)
+*.pth
+*.onnx
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Colab checkpoints
+.ipynb_checkpoints/
+
+# Eggs
+*.egg-info/
