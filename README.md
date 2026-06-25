@@ -385,9 +385,10 @@ The immediate download protects against Colab session loss.
 
 **Key connection between Stage 4 and Stage 5:**
 
-InternVL receives per image:
-1. `path` - preprocessed image in dl_preprocessed/ (same file PaddleOCR processed)
-2. `raw_text` - OCR text joined from all_results for that specific image
+InternVL receives the following inputs for each image:
+
+1. `path` – Preprocessed image from `data/dl_preprocessed/` (the same image processed by PaddleOCR).
+2. `raw_text` – OCR text generated from PaddleOCR detections for that image.
 
 ```python
 # In the post-processing loop:
