@@ -443,6 +443,30 @@ not the raw original. This is the correct input for maximum accuracy.
 | half | True on GPU | FP16 for speed |
 
 ---
+### Software Versions
+
+The pipeline was developed and tested in Google Colab using the following software versions:
+
+| Component    | Version                   |
+| ------------ | ------------------------- |
+| Google Colab | T4 GPU Runtime            |
+| Python       | 3.x                       |
+| PaddlePaddle | 3.3.1                     |
+| PaddleOCR    | 2.7.3                     |
+| PyTorch      | 2.11.0+cu128              |
+| Transformers | Hugging Face Transformers |
+| Real-ESRGAN  | x4plus                    |
+| InternVL     | InternVL3.5-1B-HF         |
+
+### Hardware Environment
+
+| Component | Configuration                   |
+| --------- | ------------------------------- |
+| GPU       | NVIDIA T4 (16 GB VRAM)          |
+| Runtime   | Google Colab                    |
+| Precision | bfloat16 / FP16 where supported |
+
+---
 
 ## 12. Cell-by-Cell Explanation
 
